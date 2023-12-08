@@ -19,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='h-full'>
-      <body className={cn("relative h-full fonts-sans antialiased", inter.className)}><main>
-      </main></body>
+      <body className={cn("relative h-full fonts-sans antialiased", inter.className)}>
+        <main>
+        </main>
+      </body>
     </html>
   )
 }
