@@ -30,4 +30,4 @@ export default function RootLayout({
   );
 }
 
-//17:19 https://www.youtube.com/watch?v=06g6YJ6JCJU
+//47:25 https://www.youtube.com/watch?v=06g6YJ6JCJU
