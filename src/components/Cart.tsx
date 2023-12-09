@@ -16,7 +16,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const Cart = () => {
-  const itemCount = 0
+  const itemCount = 1
 
   const fee = 1
 
