@@ -27,4 +27,4 @@ export default function RootLayout({
   )
 }
 
-//17:19 https://www.youtube.com/watch?v=06g6YJ6JCJU
+//https://youtu.be/06g6YJ6JCJU?t=4497
