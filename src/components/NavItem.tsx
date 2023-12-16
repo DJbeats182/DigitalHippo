@@ -54,7 +54,7 @@ const NavItem = ({
 
               <div className="relative bg-white">
                 <div className="mx-auto max-w-7xl px-8">
-                  <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                  <div className=" grid grid-cols-4 gap-x-8 gap-y-10 py-16">
                     {/* Styling Error occurs somewhere between 50m and 1h14m */}
                     {/* the NavItems don't display correctly */}
                     {/* remove the grid */}

@@ -4,8 +4,11 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import { Button } from "./ui/button"
 import { User } from "@/payload-types"
 import Link from "next/link"
+import { useAuth } from "@/hooks/use-auth"
 
-const UserAccountNav = ({ user }: {user: User}) => {
+const UserAccountNav = ({ user }: { user: User }) => {
+  const { signOut } = useAuth()
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
@@ -31,9 +34,11 @@ const UserAccountNav = ({ user }: {user: User}) => {
           <Link href='/sell'>Seller Dashboard</Link>
         </DropdownMenuItem>
 
-        <DropdownMenuItem className="cursor-pointer">
+        <DropdownMenuItem
+          onClick={signOut}
+          className="cursor-pointer">
           Log Out
-          </DropdownMenuItem>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )

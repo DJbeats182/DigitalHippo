@@ -1,6 +1,10 @@
+import { router } from "@/trpc/trpc"
+import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
 export const useAuth = () => {
+  const router = useRouter()
+
   const signOut = async () => {
     try {
       const res = await fetch(
@@ -14,10 +18,16 @@ export const useAuth = () => {
         }
       )
 
-      if(!res.ok) throw new Error()
+      if (!res.ok) throw new Error()
 
-      
+      toast.success("Signed out successfully")
+
+      router.push("/sign-in")
+      router.refresh()
     } catch (err) {
-  toast.error("Couldn't sign out, please try again.")}
+      toast.error("Couldn't sign out, please try again.")
+    }
   }
+
+  return { signOut }
 }
