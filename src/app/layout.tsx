@@ -28,4 +28,4 @@ export default function RootLayout({
 }
 
 //https://youtu.be/06g6YJ6JCJU?t=14835 this link could help for debugging the email sending feature
-//https://youtu.be/06g6YJ6JCJU?t=16049
+//https://youtu.be/06g6YJ6JCJU?t=19587
